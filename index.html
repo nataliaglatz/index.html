@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Matriz de nomes não ordenados
+var nomes = ["Alice", "Carlos", "Eva", "David", "Bob"];
+
+// Usando um loop for para ordenar os nomes em ordem alfabética
+for (var i = 0; i < nomes.length - 1; i++) {
+    for (var j = i + 1; j < nomes.length; j++) {
+        // Comparar os nomes e trocar de posição se estiverem fora de ordem
+        if (nomes[i] > nomes[j]) {
+            var temp = nomes[i];
+            nomes[i] = nomes[j];
+            nomes[j] = temp;
+        }
+    }
+}
+
+// Exibir os nomes ordenados
+console.log(nomes);
+
+    </script>
+</body>
+</html>
